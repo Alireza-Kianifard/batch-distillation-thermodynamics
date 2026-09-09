@@ -31,6 +31,7 @@ Model outputs across flash and bubble point calculations were benchmarked agains
 * The overall relative error across phase fractions and equilibrium temperatures remains below 0.5%.
 
 ## Repository Structure
+
 ```text
 batch-distillation-thermo/
 ├── .gitignore
@@ -41,36 +42,45 @@ batch-distillation-thermo/
 ├── data/
 │   └── distillation_results.csv
 └── batch_distillation/
-├── core/
-│   ├── activity_nrtl.py
-│   ├── eos_pr.py
-│   └── enthalpy.py
-├── models/
-│   ├── component.py
-│   └── mixture.py
-├── solvers/
-│   ├── rachford_rice.py
-│   ├── bubble_point.py
-│   └── wilson.py
-└── simulation/
-└── batch_column.py
+    ├── core/
+    │   ├── activity_nrtl.py
+    │   ├── eos_pr.py
+    │   └── enthalpy.py
+    ├── models/
+    │   ├── component.py
+    │   └── mixture.py
+    ├── solvers/
+    │   ├── rachford_rice.py
+    │   ├── bubble_point.py
+    │   └── wilson.py
+    └── simulation/
+        └── batch_column.py
+```
 
 ## Requirements and Installation
 
 ### Prerequisites
-* Python 3.9 or higher
-* NumPy
+
+- Python 3.9 or higher
+- NumPy
 
 ### Setup
+
 1. Clone the repository:
-bash
+
+```bash
 git clone https://github.com/Alireza-Kianifard/batch-distillation-thermodynamics.git
-cd batch-distillation-thermo
+cd batch-distillation-thermodynamics
+```
 
 2. Install required packages:
-bash
+
+```bash
 pip install -r requirements.txt
+```
 
 3. Run the simulation:
-bash
+
+```bash
 python main.py
+```
