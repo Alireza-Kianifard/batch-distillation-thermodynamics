@@ -30,13 +30,15 @@ Model outputs across flash and bubble point calculations were benchmarked agains
 * The comparison data is available in `HYSYS_comparison.xlsx`.
 * The overall relative error across phase fractions and equilibrium temperatures remains below 0.5%.
 
-# Repository Structure
+## Repository Structure
+```text
 batch-distillation-thermo/
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
 ├── HYSYS_comparison.xlsx
 ├── main.py
+├── data/
 │   └── distillation_results.csv
 └── batch_distillation/
 ├── core/
@@ -51,19 +53,24 @@ batch-distillation-thermo/
 │   ├── bubble_point.py
 │   └── wilson.py
 └── simulation/
-    └── batch_column.py
+└── batch_column.py
 
-# Requirements and Installation
+## Requirements and Installation
 
-## Prerequisites
+### Prerequisites
 * Python 3.9 or higher
 * NumPy
 
-## Setup
+### Setup
 1. Clone the repository:
-   git clone https://github.com/Alireza-Kianifard/batch-distillation-thermodynamics.git
-   cd batch-distillation-thermo
+bash
+git clone https://github.com/Alireza-Kianifard/batch-distillation-thermodynamics.git
+cd batch-distillation-thermo
+
 2. Install required packages:
-   pip install -r requirements.txt
+bash
+pip install -r requirements.txt
+
 3. Run the simulation:
-   python main.py
+bash
+python main.py
