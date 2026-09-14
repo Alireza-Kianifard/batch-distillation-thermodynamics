@@ -36,6 +36,7 @@ Model outputs across flash and bubble point calculations were benchmarked agains
 batch-distillation-thermo/
 ├── .gitignore
 ├── README.md
+├── LICENSE
 ├── requirements.txt
 ├── HYSYS_comparison.xlsx
 ├── main.py
